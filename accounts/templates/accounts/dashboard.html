@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h2 class="neon-text mb-3">Welcome back, {{ user.username|default:'Investor' }}!</h2>
+    <p class="text-secondary">Here's your Fundzzit Financial Overview:</p>
+</div>
+
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <div class="card p-4 text-center">
+            <h5 class="neon-text">Mutual Funds</h5>
+            <p class="neon-green">Track SIPs, growth, and returns.</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card p-4 text-center">
+            <h5 class="neon-text">Corporate Funding</h5>
+            <p class="neon-green">View loan requests and approvals.</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card p-4 text-center">
+            <h5 class="neon-text">Trading Portfolio</h5>
+            <p class="neon-green">Analyze stocks, options, and crypto positions.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

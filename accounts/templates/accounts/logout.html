@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Logout{% endblock %}
+
+{% block content %}
+<div class="text-center mt-5">
+    <h2 class="neon-text mb-3">You’ve been logged out.</h2>
+    <p class="neon-green">Thank you for visiting Fundzzit.</p>
+    <p class="text-secondary mb-4">Your financial journey never stops — come back soon to explore more insights and opportunities.</p>
+    <a href="{% url 'login' %}" class="btn btn-cyber px-4">Login Again</a>
+</div>
+{% endblock %}
